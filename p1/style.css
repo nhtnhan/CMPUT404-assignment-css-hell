@@ -33,6 +33,13 @@ ul{
     padding: 0;
 }
 
+/* IMAGE */
+img {
+    caption-side: bottom;
+    filter: sepia(100%);
+    width: 50%;
+}
+
 /* HEADERS */
 h1, h2, h3, h4, h5 {
     font-variant: small-caps;
@@ -72,13 +79,18 @@ h5 {
     font-size: 110%;
 }
 
+
+/* PARAGRAPHS */
+p.continued, h2 + p, hr + p, p:first-child{
+    text-indent: 1.5em;
+}
+    
 p{
     margin: 0;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
 
-/* PARAGRAPHS */
 p.poem {
     text-indent: 0%;
     margin-left: 10%;
@@ -139,6 +151,10 @@ td.right{
 
 
 /* IDs */
+.pfirst {
+    text-indent: 1.5em;
+}
+
 .p2 {
     margin-top: 2em;
 }
